@@ -24,7 +24,7 @@
   "scripts": {
     "tsc": "tsc",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "bugs": {
     "url": "https://github.com/silvelo/ts-simple/issues"
