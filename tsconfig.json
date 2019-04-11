@@ -1,14 +1,29 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": true,
+    "lib": [
+      "es6"
+    ],
     "baseUrl": "packages",
     "paths": {
       "@ts-simple/deep-keys/*": [
         "deep-keys/src/*"
+      ],
+      "@ts-simple/deep-keys": [
+        "deep-keys/src/"
       ]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
 }
