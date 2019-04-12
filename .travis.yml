@@ -11,9 +11,9 @@ script:
 - npm run coverage
 
 before_deploy:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
-  - echo "@ts-simple:registry=https://registry.npmjs.org" >> $HOME/.npmrc 2> /dev/null
-
+  - npm config set @ts-simple:registry=https://registry.npmjs.org
+  - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+  - 
 deploy:
   provider: script
   script: npm run lerna:publish

@@ -8,7 +8,6 @@
     "coverage": "lerna run coverage",
     "lerna:version": "lerna version --exact",
     "prepublish": "npm run tsc",
-    "travis:login": "npm run npm-login-noninteractive",
     "lerna:publish": "lerna publish from-git --yes"
   },
   "devDependencies": {
