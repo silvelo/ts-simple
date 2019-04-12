@@ -13,7 +13,7 @@ script:
   - npm run coverage
 
 before_deploy:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+  - npm login --registry=http://registry.npmjs.org/:_authToken=\${NPM_TOKEN} --scope=@ts-simple
 
 deploy:
   provider: script
