@@ -1,7 +1,7 @@
 {
   "name": "@ts-simple/deep-keys",
-  "version": "0.0.0",
-  "description": "> TODO: description",
+  "version": "0.0.1",
+  "description": "Get all keys of object",
   "author": "Arturo Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "https://github.com/silvelo/ts-simple#readme",
   "license": "ISC",
