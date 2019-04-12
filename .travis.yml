@@ -9,11 +9,17 @@ before_script:
 - npm run prepublish
 script:
 - npm run coverage
+
 deploy:
-  provider: npm
-  skip_cleanup: true
-  email: arturo.silvelo@gmail.com
-  api_key:
-    secure: cojP8Vm+FttWHlPDkgofhOe8XdQJ7nwdjfoR8KMj7coBfoZ8MLNIFl4pd5Sfkv75ptzvqLNR1FzJiG3y45EKDYQOH2PnX3XhD+IwgvdslVbY23HmH0fz2th1Vr/4QSPG2xto0nYTjs/X+ug3wTqn2g7NYd/7+gPmxcHz/wFGxa5iu5+9fThCYyum7ZJnWXyQvhBt8UhBElpW7V7PY2eUf3ZpAAY4NfK/MLALJTqRRFFWeGxYJn3lXwo+e+or9F01vNCVbtpU6Zi9+ZUkgNX9ixlmFcr4Yu++wP7N5b+7a5lkiDjgXTyifIDktRu8z3Y1sOr9PatbGmWSOKyffCBAj6Jqra5B4JLpbGkk+US2SzgcBhf7wiWEKJZiwArplAiZdVzVPfmYoiEmq0TdtCViJyweSqrI/+k9jjvr9swkZ0gW7HdI3ws800MJNykWUT/ElFjfG45V6vRGPpoaHdnUey5ZXgVxxGNfIo6W/F3eDONG5wC7FtL1ElsfrmB0U6CEWiIRw/OaA5HRZRYPi9JIM4atf/ah/D2z0D0LBODyk7zICEClwnyqxeER3r1+eQQakvLJUBwbXKqqTwxXva3MVFXna3prVtx0gr0/Vu6FoDa3yYLXOGOyRiHWq5L0HTYTA7bIlaa6R7I+dK/A7j3NRvmrQgNPfBUzzXSo4fKuRZg=
-  on:
-    tags: true
+  - provider: npm
+    skip_cleanup: true
+    email: arturo.silvelo@gmail.com
+    api_key:
+      secure: cojP8Vm+FttWHlPDkgofhOe8XdQJ7nwdjfoR8KMj7coBfoZ8MLNIFl4pd5Sfkv75ptzvqLNR1FzJiG3y45EKDYQOH2PnX3XhD+IwgvdslVbY23HmH0fz2th1Vr/4QSPG2xto0nYTjs/X+ug3wTqn2g7NYd/7+gPmxcHz/wFGxa5iu5+9fThCYyum7ZJnWXyQvhBt8UhBElpW7V7PY2eUf3ZpAAY4NfK/MLALJTqRRFFWeGxYJn3lXwo+e+or9F01vNCVbtpU6Zi9+ZUkgNX9ixlmFcr4Yu++wP7N5b+7a5lkiDjgXTyifIDktRu8z3Y1sOr9PatbGmWSOKyffCBAj6Jqra5B4JLpbGkk+US2SzgcBhf7wiWEKJZiwArplAiZdVzVPfmYoiEmq0TdtCViJyweSqrI/+k9jjvr9swkZ0gW7HdI3ws800MJNykWUT/ElFjfG45V6vRGPpoaHdnUey5ZXgVxxGNfIo6W/F3eDONG5wC7FtL1ElsfrmB0U6CEWiIRw/OaA5HRZRYPi9JIM4atf/ah/D2z0D0LBODyk7zICEClwnyqxeER3r1+eQQakvLJUBwbXKqqTwxXva3MVFXna3prVtx0gr0/Vu6FoDa3yYLXOGOyRiHWq5L0HTYTA7bIlaa6R7I+dK/A7j3NRvmrQgNPfBUzzXSo4fKuRZg=
+    on:
+      tags: true
+  - provider: script
+    script: npm run lerna:publish
+    skip_cleanup: true
+    on:
+      tags: true
