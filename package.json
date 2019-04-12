@@ -9,7 +9,7 @@
     "lerna:version": "lerna version --exact",
     "prepublish": "npm run tsc",
     "travis:login": "npm run npm-login-noninteractive",
-    "lerna:publish": "lerna publish from-git --yes"
+    "publish": "lerna publish from-git --yes"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
