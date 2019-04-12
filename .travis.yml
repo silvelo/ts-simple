@@ -10,8 +10,8 @@ before_script:
 script:
 - npm run coverage
 before_deploy:
-- echo "@ts-simple:registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2>
-  /dev/null
+ - printf "@ts-simple:registry=https://registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+
 deploy:
   provider: script
   script: npm run lerna:publish
@@ -19,5 +19,3 @@ deploy:
   on:
     node: 10.15.3
     tags: true
-  api_key:
-    secure: E1XS/e4khnNsC4gGcN3qld++kpPMB2cfOmlGFgTJf5q7T5Vc2ANw+9dn3jlHH2BBZrWYVa6zcEJlAyGoT0yAYpSMLuaLpkjX7/RfFoxcrqtatnVDWjRUPlmybN2fs//pgfITFn2WHnmokbCryuSj7RFJScZny4k2VWTrkv6auyE4LM1X7W1Ixoh8rHajCYOVzdUJczy1k1tuOmByegcsY1vYpYLLkI7UithCZwzt0B30TN0U8FTHUki9aF+S3YLEoo9aF/ssR4rYUO8w7SAtBImP8ohyZEHpSimFj3gYKAoI3OWi6iM6Ld6qTVA+zGLmZs3k2m5a5zPcNbk5d1lX3BlFT+U46W1Xgb1eJfIdkHasxPRSBxX4Fq9OKGL4z+pMPB0cHBKr0Ueh4QiYBgcRdYc4M+9BZDlQ2ofTWa73PlpXHB8IjyigJxiuht5Cl++wC22NLqsVWxiWfUNLC++SFlr9uJMsTuo7Y6hGf9All/ZhwFec125qcz9k6UyySzduX9FamAZkcXMFBhVLl21GnzN2EnjvMN/TmEJWSsBCMdf6j1PfUZ/LrWJK1CWH7KUJkwUsujJ+4neVZ15TMw4HzitKBvFc0KhQis5rcTW25hmxoUfiYmG0xhzgD/8RsQeiQAGxvj6HImBaub6Wjdv6uOn/b7fb6psVQdUCuSetfK0=
