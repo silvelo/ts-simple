@@ -10,7 +10,7 @@ before_script:
 script:
 - npm run coverage
 before_deploy:
- - printf "@ts-simple:registry=https://registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+- printf "%s\n%s\n%s" $NPM_USER $NPM_PASSWORD $NPM_EMAIL | npm login --scope=@ts-simple
 
 deploy:
   provider: script
