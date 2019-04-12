@@ -14,11 +14,11 @@
     ],
     "baseUrl": "packages",
     "paths": {
-      "@ts-simple/deep-keys": [
+      "@ts-simple/deep-keys/*": [
         "deep-keys/src/"
       ],
-      "@ts-simple/is-par": [
-        "is-par/src"
+      "@ts-simple/is-pair/*": [
+        "is-pair/src"
       ]
     }
   },

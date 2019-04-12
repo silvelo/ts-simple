@@ -1,12 +1,12 @@
 {
-  "name": "@ts-simple/is-par",
+  "name": "@ts-simple/is-pair",
   "version": "0.0.1",
-  "description": "Validate if a number is par",
+  "description": "Validate if a number is pair",
   "author": "Arturo Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "https://github.com/silvelo/ts-simple#readme",
   "license": "ISC",
-  "main": "lib/is-par.js",
-  "typings": "lib/is-par.d.ts",
+  "main": "lib/is-pair.js",
+  "typings": "lib/is-pair.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -31,7 +31,7 @@
   },
   "keywords": [
     "typescript",
-    "is-par",
+    "pair",
     "helpers"
   ]
 }
