@@ -6,7 +6,7 @@
     "tsc": "lerna run tsc",
     "test": "lerna run test",
     "coverage": "lerna run coverage",
-    "lerna:version": "lerna version prerelease --preid beta"
+    "lerna:version": "lerna version --exact"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
