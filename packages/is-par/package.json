@@ -1,7 +1,7 @@
 {
-  "name": "is-par",
+  "name": "@ts-simple/is-par",
   "version": "0.0.1",
-  "description": "> TODO: description",
+  "description": "Validate if a number is par",
   "author": "Arturo Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "https://github.com/silvelo/ts-simple#readme",
   "license": "ISC",

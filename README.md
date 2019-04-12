@@ -2,6 +2,16 @@
 [![Build Status](https://travis-ci.com/silvelo/ts-simple.svg?branch=master)](https://travis-ci.com/silvelo/ts-simple)
 [![Coverage Status](https://coveralls.io/repos/github/silvelo/ts-simple/badge.svg?branch=master)](https://coveralls.io/github/silvelo/ts-simple?branch=master)
 
+
+## How to publish
+
+npm run lerna:version
+
+Configure versions of packages
+
+
+And done
+
 ## Contribution
 
 npm i
