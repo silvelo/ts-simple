@@ -10,7 +10,7 @@ before_script:
 script:
 - npm run coverage
 before_deploy:
-- printf "%s\n%s\n%s" $NPM_USER $NPM_PASSWORD $NPM_EMAIL | npm login --scope=@ts-simple
+- npm run travis:login
 
 deploy:
   provider: script

@@ -8,6 +8,7 @@
     "coverage": "lerna run coverage",
     "lerna:version": "lerna version --exact",
     "prepublish": "npm run tsc",
+    "travis:login": "npm run npm-login-noninteractive",
     "lerna:publish": "lerna publish from-git --yes"
   },
   "devDependencies": {
@@ -17,6 +18,7 @@
     "coveralls": "^3.0.3",
     "jest": "^24.7.1",
     "lerna": "^3.13.2",
+    "npm-login-noninteractive": "^0.1.4",
     "ts-jest": "^24.0.2",
     "tslint": "^5.15.0",
     "typescript": "^3.4.3"
