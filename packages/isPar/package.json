@@ -23,7 +23,15 @@
     "test": "jest",
     "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/silvelo/ts-simple/issues"
-  }
+  },
+  "keywords": [
+    "typescript",
+    "is-par",
+    "helpers"
+  ]
 }

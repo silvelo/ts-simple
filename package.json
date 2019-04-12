@@ -6,7 +6,9 @@
     "tsc": "lerna run tsc",
     "test": "lerna run test",
     "coverage": "lerna run coverage",
-    "lerna:version": "lerna version --exact"
+    "lerna:version": "lerna version --exact",
+    "prepublish": "npm run tsc",
+    "lerna:publish": "lerna publish from-git --yes"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
