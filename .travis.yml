@@ -10,6 +10,7 @@ before_script:
 script:
 - npm run coverage
 before_deploy:
+- npm i -g npm-login-noninteractive
 - npm run travis:login
 
 deploy:
