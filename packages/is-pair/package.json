@@ -1,6 +1,6 @@
 {
   "name": "@ts-simple/is-pair",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Validate if a number is pair",
   "author": "Arturo Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "https://github.com/silvelo/ts-simple#readme",
