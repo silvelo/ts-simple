@@ -1,8 +1,9 @@
+# `ts-simple`
+
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![Build Status](https://travis-ci.com/silvelo/ts-simple.svg?branch=master)](https://travis-ci.com/silvelo/ts-simple)
 [![Coverage Status](https://coveralls.io/repos/github/silvelo/ts-simple/badge.svg?branch=master)](https://coveralls.io/github/silvelo/ts-simple?branch=master)
 
-# `ts-simple`
 
 A collection of packages for simplifying your life. The most common packages contain simple functions that I used in a lot of my projects. By this way I try to unify that functions in a repository and testing to avoid bugs.
 
