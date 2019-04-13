@@ -9,7 +9,7 @@
     "lerna:version": "lerna version --exact",
     "prepublish": "npm run tsc",
     "lerna:publish": "lerna publish from-git --yes",
-    "lerna:badges": "lerna exec -- cross-var node $LERNA_ROOT_PATH/scripts/generate.js"
+    "lerna:badges": "lerna exec -- cross-var node $LERNA_ROOT_PATH/scripts/generate-badges.js"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
