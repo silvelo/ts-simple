@@ -4,7 +4,7 @@
   "description": "Get all keys of object",
   "author": "Arturo Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "https://github.com/silvelo/ts-simple#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/deep-keys.js",
   "typings": "lib/deep-keys.d.ts",
   "directories": {
