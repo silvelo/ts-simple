@@ -53,6 +53,8 @@ The members only need to run the script and establish the simver.
 npm run lerna:version
 ```
 
+Before publish update the badges branch version.
+
 ## Future
 
 Generate core packages to group common functionality in same package and avoid installing multiple packages.
