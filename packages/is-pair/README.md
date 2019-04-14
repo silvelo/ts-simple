@@ -7,6 +7,9 @@
 
 Simple function to verify is pair
 
+## API
+
+* isPair(n: number) => boolean;
 
 ## Usage
 

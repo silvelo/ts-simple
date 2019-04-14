@@ -9,6 +9,12 @@ A collection of packages for simplifying your life. The most common packages con
 
 Following DRY philosophy.
 
+## Library list
+-----
+
+* [deep-object](https://github.com/silvelo/ts-simple/tree/master/packages/deep-keys)
+* [is-pair](https://github.com/silvelo/ts-simple/tree/master/packages/is-pair)
+
 ## How to contribution
 ---
 1. Generate package.

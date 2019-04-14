@@ -10,6 +10,10 @@ Simple function to return keys in object, even nested objects.
 
 > Warning: Huge object should return 'Maximum call stack size exceeded' 
 
+## API
+
+* deepObject(object:Object) => string[];
+
 ## Usage
 
 ### Simple Object
