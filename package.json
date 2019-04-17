@@ -7,7 +7,7 @@
     "test": "lerna run test",
     "coverage": "lerna run coverage",
     "prepublish": "npm run tsc",
-    "preversion": "npm run lern:badges",
+    "preversion": "npm run lerna:badges",
     "postversion": "echo postverion",
     "lerna:version": "lerna version --exact --no-push",
     "lerna:publish": "lerna publish from-git --yes",
