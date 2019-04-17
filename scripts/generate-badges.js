@@ -1,7 +1,6 @@
 //@ts-check
 
 const path = require('path');
-const replace = require('replace-in-file');
 const os = require('os');
 const fs = require('fs');
 const updateSection = require('update-section');
@@ -33,7 +32,7 @@ function matchesEnd(line) {
 
 try {
   const readmeContent = fs.readFileSync(readmeFile, 'utf-8');
-  const updated = updateSection(readmeContent, update, matchesStart, matchesEnd, false);
+  const updated = updateSection(readmeContent, update, matchesStart, matchesEnd, true);
   fs.writeFileSync(readmeFile, updated);
 } catch (e) {
   console.log(e.message);

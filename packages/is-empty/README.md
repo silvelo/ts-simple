@@ -1,7 +1,8 @@
 # `is-empty`
 
 <!-- START SHIELD -->
-
+[![Build Status](https://travis-ci.org/silvelo/ts-simple.svg?branch=@ts-simple\is-empty\@\0.0.0)](https://travis-ci.org/silvelo/ts-simple?branch=@ts-simple\is-empty\@\0.0.0)
+[![Coverage Status](https://coveralls.io/repos/github/silvelo/ts-simple/badge.svg?branch=@ts-simple\is-empty\@\0.0.0)](https://coveralls.io/github/silvelo/ts-simple?branch=@ts-simple\is-empty\@\0.0.0)
 <!-- END SHIELD -->
 ![npm](https://img.shields.io/npm/dm/%40ts-simple%2Fis-empty.svg)
 ![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/min/@ts-simple/is-empty.svg)
