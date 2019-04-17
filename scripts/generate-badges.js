@@ -3,6 +3,8 @@
 const path = require('path');
 const replace = require('replace-in-file');
 const os = require('os');
+const fs = require('fs');
+const updateSection = require('update-section');
 
 const PACKAGE_NAME = process.env.LERNA_PACKAGE_NAME;
 const ROOT_PATH = process.env.LERNA_ROOT_PATH;
@@ -18,22 +20,23 @@ let coverallsString =
 let travisString =
   `[![Build Status](https://travis-ci.org/silvelo/ts-simple.svg?branch=${branch})](https://travis-ci.org/silvelo/ts-simple?branch=${branch})`
 
-const tagKey = '<!-- Shield Tag -->';
 
-const data = `${travisString}${os.EOL}${coverallsString}`;
+const update = `<!-- START SHIELD -->${os.EOL}${travisString}${os.EOL}${coverallsString}${os.EOL}<!-- END SHIELD -->`;
 
-const replaceOptions = {
-  files: readmeFile,
-  from: tagKey,
-  to: data,
-};
+function matchesStart(line) {
+  return (/<!-- START SHIELD -->/).test(line);
+}
 
-(async () => {
-  try {
-    const changes = await replace(replaceOptions)
-    console.log('Modified files:', changes.join(', '));
-  }
-  catch (error) {
-    console.error('Error occurred:', error);
-  }
-})();  
+function matchesEnd(line) {
+  return (/<!-- END SHIELD -->/).test(line);
+}
+
+try {
+  const readmeContent = fs.readFileSync(readmeFile, 'utf-8');
+  const updated = updateSection(readmeContent, update, matchesStart, matchesEnd, false);
+  fs.writeFileSync(readmeFile, updated);
+} catch (e) {
+  console.log(e.message);
+}
+
+

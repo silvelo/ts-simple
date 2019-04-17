@@ -1,8 +1,8 @@
 # `is-empty`
 
-<!-- Shield Tag Start -->
+<!-- START SHIELD -->
 
-<!-- Shield Tag End-->
+<!-- END SHIELD -->
 ![npm](https://img.shields.io/npm/dm/%40ts-simple%2Fis-empty.svg)
 ![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/min/@ts-simple/is-empty.svg)
 ![NPM](https://img.shields.io/npm/l/@ts-simple/is-empty.svg)
