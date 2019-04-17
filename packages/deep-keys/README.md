@@ -1,6 +1,8 @@
 # `deep-keys`
 
-<!-- Shield Tag -->
+<!-- Shield Tag Start -->
+
+<!-- Shield Tag End-->
 ![npm](https://img.shields.io/npm/dm/%40ts-simple%2Fdeep-keys.svg)
 ![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/min/@ts-simple/deep-keys.svg)
 ![NPM](https://img.shields.io/npm/l/@ts-simple/deep-keys.svg)

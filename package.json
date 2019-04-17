@@ -6,10 +6,10 @@
     "tsc": "lerna run tsc",
     "test": "lerna run test",
     "coverage": "lerna run coverage",
-    "lerna:version": "lerna version --exact",
+    "lerna:version": "lerna version --exact --no-git-tag-version --no-push",
     "prepublish": "npm run tsc",
     "lerna:publish": "lerna publish from-git --yes",
-    "lerna:badges": "lerna exec -- cross-var node $TRAVIS_BUILD_DIR/scripts/generate-badges.js"
+    "lerna:badges": "lerna exec -- cross-var node $LERNA_ROOT_PATH/scripts/generate-badges.js"
   },
   "devDependencies": {
     "@microsoft/tsdoc": "^0.12.9",
