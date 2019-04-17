@@ -11,16 +11,7 @@
     "sourceMap": true,
     "lib": [
       "es6"
-    ],
-    "baseUrl": "packages",
-    "paths": {
-      "@ts-simple/deep-keys/*": [
-        "deep-keys/src/"
-      ],
-      "@ts-simple/is-pair/*": [
-        "is-pair/src"
-      ]
-    }
+    ]
   },
   "exclude": [
     "node_modules",
