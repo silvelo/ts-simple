@@ -9,6 +9,7 @@
 ![NPM](https://img.shields.io/npm/l/@ts-simple/is-empty.svg)
 
 
+
 Simple function to check if object is empty. Can validate all type of objects by set strict to false.
 
 
