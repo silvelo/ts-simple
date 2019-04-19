@@ -8,6 +8,7 @@
     "coverage": "lerna run coverage",
     "prepublish": "npm run tsc",
     "lerna:version": "lerna version --exact",
+    "postversion": "npm run lerna:badges && git add . && git commit -m 'Update Badges' && git push --follow-tags",
     "lerna:publish": "lerna publish from-git --yes",
     "lerna:badges": "lerna exec -- cross-var node $LERNA_ROOT_PATH/scripts/generate-badges.js"
   },
