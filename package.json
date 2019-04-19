@@ -8,9 +8,8 @@
     "coverage": "lerna run coverage",
     "prepublish": "npm run tsc",
     "lerna:version": "lerna version --exact",
-    "postversion": "npm run lerna:badges && git add . && git commit -m 'Update Badges' && git push --follow-tags",
     "lerna:publish": "lerna publish from-git --yes",
-    "lerna:badges": "lerna exec -- cross-var node $LERNA_ROOT_PATH/scripts/generate-badges.js"
+    "badges": "lerna exec -- cross-var node $LERNA_ROOT_PATH/scripts/generate-badges.js"
   },
   "devDependencies": {
     "@microsoft/tsdoc": "^0.12.9",
@@ -20,6 +19,7 @@
     "cross-var": "^1.1.0",
     "jest": "^24.7.1",
     "lerna": "^3.13.2",
+    "prompt-input": "^3.0.0",
     "ts-jest": "^24.0.2",
     "tslint": "^5.15.0",
     "typescript": "^3.4.3",

@@ -5,13 +5,31 @@ const os = require('os');
 const fs = require('fs');
 const updateSection = require('update-section');
 
+const Input = require('prompt-input');
+
+const input  = new Input({
+    message: `Version fo ${process.env.LERNA_PACKAGE_NAME}`,
+    name: 'version',
+    validator: /^([0-9]+)\.([0-9]+)\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?(?:\+[0-9A-Za-z-]+)?$/
+  })
+
+if (process.argv.length === 2) {
+  console.error('Expected at least one argument!');
+  process.exit(1);
+}
+
+input.render();
+
+
+
+const version = process.argv[2];
 const PACKAGE_NAME = process.env.LERNA_PACKAGE_NAME;
 const ROOT_PATH = process.env.LERNA_ROOT_PATH;
 const folderName = PACKAGE_NAME.replace('@ts-simple/', '');
 const directory = path.join(ROOT_PATH, 'packages', folderName);
 const readmeFile = path.join(directory, 'README.md');
-const package = require(path.join(directory, 'package.json'));
-const branch = path.join(PACKAGE_NAME, '@', package.version)
+const branch = `${PACKAGE_NAME}@${version}`;
+
 
 let coverallsString =
   `[![Coverage Status](https://coveralls.io/repos/github/silvelo/ts-simple/badge.svg?branch=${branch})](https://coveralls.io/github/silvelo/ts-simple?branch=${branch})`

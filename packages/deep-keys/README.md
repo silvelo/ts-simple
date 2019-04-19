@@ -2,8 +2,8 @@
 
 
 <!-- START SHIELD -->
-[![Build Status](https://travis-ci.org/silvelo/ts-simple.svg?branch=@ts-simple\deep-keys\@\0.0.2)](https://travis-ci.org/silvelo/ts-simple?branch=@ts-simple\deep-keys\@\0.0.2)
-[![Coverage Status](https://coveralls.io/repos/github/silvelo/ts-simple/badge.svg?branch=@ts-simple\deep-keys\@\0.0.2)](https://coveralls.io/github/silvelo/ts-simple?branch=@ts-simple\deep-keys\@\0.0.2)
+[![Build Status](https://travis-ci.org/silvelo/ts-simple.svg?branch=@ts-simple\deep-keys@0.0.3)](https://travis-ci.org/silvelo/ts-simple?branch=@ts-simple\deep-keys@0.0.3)
+[![Coverage Status](https://coveralls.io/repos/github/silvelo/ts-simple/badge.svg?branch=@ts-simple\deep-keys@0.0.3)](https://coveralls.io/github/silvelo/ts-simple?branch=@ts-simple\deep-keys@0.0.3)
 <!-- END SHIELD -->
 ![npm](https://img.shields.io/npm/dm/%40ts-simple%2Fdeep-keys.svg)
 ![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/min/@ts-simple/deep-keys.svg)
