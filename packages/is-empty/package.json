@@ -1,6 +1,6 @@
 {
   "name": "@ts-simple/is-empty",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Check if object is empty",
   "keywords": [
     "typescript",
