@@ -56,7 +56,8 @@ Following DRY philosophy.
   
   * Add shield tag comment to your readme to generate travis and coverall shields automatically in build time.
     ```text
-    <!-- Shield Tag -->
+    <!-- START SHIELD -->
+    <!-- END SHIELD -->
     ```
 
 All __devDependencies__ go in root package and try to avoid use externnal dependencies in your's packages.
