@@ -7,7 +7,7 @@
     "object"
   ],
   "author": "Arturo Silvelo <arturo.silvelo@gmail.com>",
-  "homepage": "https://github.com/silvelo/ts-simple#readme",
+  "homepage": "https://github.com/silvelo/ts-simple/tree/master/packages/is-empty#readme",
   "license": "MIT",
   "main": "lib/is-empty.js",
   "typings": "lib/is-empty.d.ts",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/silvelo/ts-simple.git"
+    "url": "https://github.com/silvelo/ts-simple/tree/master/packages/is-empty"
   },
   "scripts": {
     "tsc": "tsc",
