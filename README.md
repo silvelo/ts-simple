@@ -69,6 +69,7 @@ The permision to publish librarys is the organization collaborators. (@ts-simple
 
 The members only need to run the script and establish the simver.
 ```
+npm run badges
 npm run lerna:version
 ```
 
