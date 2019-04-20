@@ -14,13 +14,12 @@
     "git:add": "git add .",
     "git:commit": "git commit -m \"New Version\"",
     "git:push": "git push"
-    
   },
   "devDependencies": {
     "@microsoft/tsdoc": "^0.12.9",
     "@types/jest": "^24.0.11",
     "@types/node": "^11.13.4",
-    "cross-var": "^1.1.0",
+    "coveralls": "^3.0.3",
     "jest": "^24.7.1",
     "lerna": "^3.13.2",
     "lerna-script": "^0.9.6",
