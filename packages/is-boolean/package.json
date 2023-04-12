@@ -1,0 +1,37 @@
+{
+  "name": "@ts-simple/is-boolean",
+  "version": "1.0.0",
+  "description": "Convert string value to boolean value",
+  "keywords": [
+    "typescript",
+    "boolean",
+    "convert"
+  ],
+  "author": "Arturo Silvelo <arturo.silvelo@gmail.com>",
+  "homepage": "https://github.com/silvelo/ts-simple/tree/master/packages/is-boolean#readme",
+  "license": "MIT",
+  "main": "lib/is-boolean.js",
+  "typings": "lib/is-boolean.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silvelo/ts-simple/tree/master/packages/is-boolean"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "jest",
+    "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "bugs": {
+    "url": "https://github.com/silvelo/ts-simple/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
