@@ -1,39 +1,39 @@
-import { isBoolean } from '../src/is-boolean'; // Replace with the correct import path
+import { str2Bool } from '../src/str-2-bool'; // Replace with the correct import path
 
-describe('isBoolean', () => {
+describe('str2Bool', () => {
   test('should return true for "true" (strict mode)', () => {
-    expect(isBoolean('true')).toBe(true);
+    expect(str2Bool('true')).toBe(true);
   });
 
   test('should return true for "True" (strict mode)', () => {
-    expect(isBoolean('True')).toBe(true);
+    expect(str2Bool('True')).toBe(true);
   });
 
   test('should return true for "True" (strict mode)', () => {
-    expect(isBoolean('TrUE')).toBe(true);
+    expect(str2Bool('TrUE')).toBe(true);
   });
 
   test('should return false for "false" (strict mode)', () => {
-    expect(isBoolean('false')).toBe(false);
+    expect(str2Bool('false')).toBe(false);
   });
 
   test('should return false for "false" (strict mode)', () => {
-    expect(isBoolean('FaLsE')).toBe(false);
+    expect(str2Bool('FaLsE')).toBe(false);
   });
 
   test('should return false for "false" (strict mode)', () => {
-    expect(isBoolean('False')).toBe(false);
+    expect(str2Bool('False')).toBe(false);
   });
 
   test('should return false for "false" (non-strict mode)', () => {
-    expect(isBoolean('false', false)).toBe(false);
+    expect(str2Bool('false', false)).toBe(false);
   });
 
   test('should return null for other values (strict mode)', () => {
-    expect(isBoolean('randomValue')).toBeNull();
+    expect(str2Bool('randomValue')).toBeNull();
   });
 
   test('should return null for other values (non-strict mode)', () => {
-    expect(isBoolean('randomValue', false)).toBe(false);
+    expect(str2Bool('randomValue', false)).toBe(false);
   });
 });

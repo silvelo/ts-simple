@@ -16,7 +16,7 @@ Following DRY philosophy.
 | [`@ts-simple/deep-keys`](https://www.npmjs.com/package/@ts-simple/deep-keys) | [![version](https://img.shields.io/npm/v/@ts-simple/deep-keys/latest.svg)](https://www.npmjs.com/package/@ts-simple/deep-keys) | [`README.md`](packages/deep-keys/README.md)
 | [`@ts-simple/is-pair`](https://www.npmjs.com/package/@ts-simple/is-pair) | [![version](https://img.shields.io/npm/v/@ts-simple/is-pair/latest.svg)](https://www.npmjs.com/package/@ts-simple/is-pair) | [`README.md`](packages/is-pair/README.md)
 | [`@ts-simple/is-empty`](https://www.npmjs.com/package/@ts-simple/is-empty) | [![version](https://img.shields.io/npm/v/@ts-simple/is-empty/latest.svg)](https://www.npmjs.com/package/@ts-simple/is-empty) | [`README.md`](packages/is-empty/README.md)
-| [`@ts-simple/is-boolean`](https://www.npmjs.com/package/@ts-simple/is-boolean) | [![version](https://img.shields.io/npm/v/@ts-simple/is-boolean/latest.svg)](https://www.npmjs.com/package/@ts-simple/is-boolean) | [`README.md`](packages/is-boolean/README.md)
+| [`@ts-simple/str-2-boolean`](https://www.npmjs.com/package/@ts-simple/str-2-boolean) | [![version](https://img.shields.io/npm/v/@ts-simple/str-2-boolean/latest.svg)](https://www.npmjs.com/package/@ts-simple/str-2-boolean) | [`README.md`](packages/str-2-boolean/README.md)
 
 
 ## How to contribution
