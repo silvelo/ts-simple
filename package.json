@@ -12,7 +12,7 @@
     "test": "lerna run test",
     "coverage": "lerna run coverage",
     "prepublish": "npm run tsc",
-    "lerna:version": "lerna version --exact",
+    "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-git --yes",
     "generate:badges": "node ./scripts/generate-badges.js"
   },
