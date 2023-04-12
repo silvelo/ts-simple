@@ -1,6 +1,6 @@
 {
   "name": "@ts-simple/is-boolean",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Convert string value to boolean value",
   "keywords": [
     "typescript",
@@ -33,5 +33,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "8ee9f1470bee30f53342dd20859d83c5f1ba383e"
 }
