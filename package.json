@@ -13,7 +13,7 @@
     "coverage": "lerna run coverage",
     "prepublish": "npm run tsc",
     "lerna:version": "lerna version",
-    "lerna:publish": "lerna publish from-git --yes"
+    "lerna:publish": "lerna publish"
   },
   "devDependencies": {
     "@microsoft/tsdoc": "~0.14.1",
