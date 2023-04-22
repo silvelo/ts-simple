@@ -1,4 +1,4 @@
-import { str2Bool } from '../src/str-2-bool'; // Replace with the correct import path
+import { str2Bool } from '../src/str-2-bool';
 
 describe('str2Bool', () => {
   test('should return true for "true" (strict mode)', () => {
